@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hue: 248;
+    --main:hsla(var(--hue), 53%, 60%);
+    --mainDark: hsla(var(--hue), 100%, 9%);
+    --mainlight: hsla(var(--hue), 100%, 9%, 0.8);
+    --mainHover: hsl(var(--hue), 50%, 70%);
+    --robotoMono: 'Roboto Mono', monospace;
+}
+
+body {
+    min-height: 100vh;
+    background: url("https://cdnb.artstation.com/p/assets/images/images/030/263/139/large/denis-istomin-chicco3.jpg?1600094773") no-repeat center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#foto {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #8d65c5;
+    margin-bottom: 14px;
+    
+}
+
+#nome{
+    color: var(--mainDark);
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+#arroba{
+    color: var(--mainlight); 
+    font-size: 18px;
+    font-family: var(--robotoMono);
+    margin-bottom: 48px;
+}
+
+.listalinks{
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+.listalinks .itenslinks{
+    width: 300px;
+    height: 60px;
+    border-radius: 6px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    margin-bottom: 16px;
+    background-color: var(--main);
+    
+    transition: background-color.2s;
+}
+
+.itenslinks:hover{
+    background-color: var(--mainHover);
+}
+
+footer {
+    color: hsla(var(--hue), 100%, 9%, 0.8);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+i{
+    font-size: 24px;
+    margin-right: 8px;    
+}
+
+.subtopico{
+    color: var(--mainDark);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.button{
+    width: 300px;
+    height: 60px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
